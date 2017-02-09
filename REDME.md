@@ -1,16 +1,8 @@
 Construir uma API Rest em NodeJS utilizando ExpressJS e MongoDB
 
-API 
-	- É uma interface pública para comunicação entre sistemas
+Para utilizar a API, é necessário ter instalado Node JS e MongoDB
 
-Rest (HTTP)
-	- Padronização para desenvolvimento de API
-	- POST - Create
-	- GET - Read
-	- PUT - Update
-	- DELETE - Delete
-
-Status Code
-	- 200 -> Ok
-	- 404 -> Not found
-	- 201 -> Created
+Versões utilizadas:
+	
+	Node JS v6.7.0
+	MongoDB v3.4.2
