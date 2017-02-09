@@ -30,4 +30,4 @@ GET ttp://<host>:<porta>/properties/ID
 
 3. Para buscar os imóveis em um perímetro, basta utilizar a URL abaixo:
 
-GET http://<host>:<porta>/?ax={integer}&ay={integer}&bx={integer}&by={integer}
+GET http://<host>:<porta>/properties?ax={integer}&ay={integer}&bx={integer}&by={integer}
