@@ -18,11 +18,12 @@ ImoveisModel.prototype.create = function(data, callback) {
 	//Após as validações, é feito a inserção do registro
 	if ( mensagem == 'Ok') {
 		imoseq.getNext(function(err,sequence) {
+			id = sequence
 			if (!err) {
 				mongo.collection('imoveis').update({  _id: mongo.ObjectId	('589b244209a8d15b190b9998')}, 
 					{'$push': {
 						properties: { 
-							'id': sequence, 
+							'id': id, 
 							'title': data.title,
 							'price': data.price,
 							'description': data.description,
@@ -34,7 +35,7 @@ ImoveisModel.prototype.create = function(data, callback) {
 							'provinces': spot(data.x, data.y)
 						}
 					}
-				},callback)
+				},callback(null, "Imovel com id " + id + " foi inserido com sucesso"))
 			}
 		})
 	//A reposta para o usuário será de acordo com os critérios não atendidos
